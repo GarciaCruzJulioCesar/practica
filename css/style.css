@@ -1,0 +1,104 @@
+/* ======================================== */
+      /* ESTILOS DEL HEADER/MENU */
+/* ======================================== */
+
+.header{
+  background: #C9C9C9;
+  margin-top: var(--margin-top);
+  padding: 0 5px;
+  border-radius: var(--bdradius-0-2);
+  box-shadow: 0 3px 0 #000;
+}
+#toggle{
+  display: none;
+}
+.logo{
+  font-size: var(--size-1-5);
+}
+.logo span{
+  font-size: var(--size-1-8);
+  color: #008806;
+}
+.navigation a{
+  display: inline-block;
+  padding: .5rem 1rem;
+  text-shadow: 0 0 2px #FFF;
+  color: #000;
+  transition: all .5s linear;
+}
+.navigation a:hover,
+.active{
+  background: #008806;
+  border-radius: var(--bdradius-0-2);
+}
+
+@media screen and (max-width: 992px) {
+  
+  #toggle{
+    display: block;
+    padding: .5rem 1rem;
+    border: 1px solid #E5E5E5;
+    border-radius: var(--bdradius-0-2);
+  }
+  .navigation{
+    display: none;
+    width: 100%;
+    text-align: center;
+    /* margin: 10px 0; */
+  }
+  .show{
+    display: block;
+  }
+  .navigation a{
+    display: block;
+    padding: 1rem 0; 
+    margin-bottom: 10px;
+  }
+}
+
+
+/* ======================================== */
+        /* ESTILOS DEL MODAL */
+/* ======================================== */
+
+.content__modal{
+  width: 100%;
+  height: 100vh;
+  background: #333333A8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  animation: ventana 1s;
+}
+.modal{
+  width: 90%;
+  background: #C1C1C1;
+  overflow: auto;
+}
+.header__modal{
+  background: #05A1E4;
+  padding: 15px 5px;
+}
+.header__modal .close{
+  font-weight: bold;
+  font-size: var(--size-1-5);
+}
+.main__modal .mv{
+  font-weight: bold;
+}
+.main__modal p{
+  padding: 0 20px;
+}
+.footer__modal{
+  background: #05A1E4;
+  padding: 15px 0;
+  text-align: center;
+}
+@keyframes ventana {
+  from{margin-top: -330px; opacity: 0;}
+  to{margin-top: 0; opacity: 1;}
+}
