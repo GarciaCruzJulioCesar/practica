@@ -6,8 +6,6 @@
   background: #C9C9C9;
   margin-top: var(--margin-top);
   padding: 0 5px;
-  border-radius: var(--bdradius-0-2);
-  box-shadow: 0 3px 0 #000;
 }
 #toggle{
   display: none;
@@ -101,4 +99,47 @@
 @keyframes ventana {
   from{margin-top: -330px; opacity: 0;}
   to{margin-top: 0; opacity: 1;}
+}
+
+/* ======================================== */
+        /* ESTILOS DEL SLIDER */
+/* ======================================== */
+
+#c__slider{
+  width: 500%;
+  overflow: hidden;
+  position: relative
+}
+#slider {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 500%;
+}
+#slider section{
+  width: 100%;
+}
+.slider__btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--size-1-4);
+  cursor: pointer;
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #313131A8;
+  box-shadow: 0 0 0 5px #8E8E8EB0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__btn__right{
+  right: 20px;
+}
+.slider__btn__left{
+  left: 20px;
 }

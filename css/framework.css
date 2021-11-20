@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Montagu+Slab:wght@100;200;300;400;500;600;700&family=Praise&display=swap');
+
+/* ========================================= */
+        /* VARIABLES GENERALES */
+/* ========================================= */
+:root{
+  /* FUENTES */
+  --font-kameron: 'Kameron';
+  --font-Baskerville: 'Baskerville';
+  --font-Lobster: 'Lobster';
+  --font-Montagu: 'Montagu';
+  --font-Praise: 'Praise';
+  
+  /* MARGIN */
+  --margin: 1em;
+  --margin-top: 1em;
+  --margin-right: 1em;
+  --margin-left: 1em;
+  --margin-bottom: 1em;
+  
+  /* PADDING */
+  --padding: 1em;
+  --padding-top: 1em;
+  --padding-left: 1em;
+  --padding-right: 1em;
+  --padding-bottom: 1em;
+  
+  /* BORDER RADIUS */
+  --bdradius-0-1: 1.0em;
+  --bdradius-0-1: 0.1em;
+  --bdradius-0-2: 0.2em;
+  --bdradius-0-3: 0.3em;
+  --bdradius-0-4: 0.4em;
+  --bdradius-0-5: 0.5em;
+  --bdradius-0-6: 0.6em;
+  --bdradius-0-7: 0.7em;
+  --bdradius-0-8: 0.8em;
+  --bdradius-0-9: 0.9em;
+  --bdradius-1-0: 1.0em;
+  
+  /* TAMAÑO DE FUENTE */
+  --size-0-1: 0.1em;
+  --size-0-2: 0.2em;
+  --size-0-3: 0.3em;
+  --size-0-4: 0.4em;
+  --size-0-5: 0.5em;
+  --size-0-6: 0.6em;
+  --size-0-7: 0.7em;
+  --size-0-8: 0.8em;
+  --size-0-9: 0.9em;
+  --size-1-0: 1.0em;
+  --size-1-1: 1.1em;
+  --size-1-2: 1.2em;
+  --size-1-3: 1.3em;
+  --size-1-4: 1.4em;
+  --size-1-5: 1.5em;
+  --size-1-6: 1.6em;
+  --size-1-7: 1.7em;
+  --size-1-8: 1.8em;
+  --size-1-9: 1.9em;
+  --size-2-0: 2.0em;
+  --size-2-1: 2.1em;
+  --size-2-2: 2.2em;
+  --size-2-3: 2.3em;
+  --size-2-4: 2.4em;
+  --size-2-5: 2.5em;
+  --size-2-6: 2.6em;
+  --size-2-7: 2.7em;
+  --size-2-8: 2.8em;
+  --size-2-9: 2.9em;
+  --size-3-0: 3.0em;
+  --size-3-1: 3.1em;
+  --size-3-2: 3.2em;
+  --size-3-3: 3.3em;
+  --size-3-4: 3.4em;
+  --size-3-5: 3.5em;
+  --size-3-6: 3.6em;
+  --size-3-7: 3.7em;
+  --size-3-8: 3.8em;
+  --size-3-9: 3.9em;
+  --size-4-0: 4.0em;
+}
+
+/* ========================================= */
+         /* ESTILOS GENERALES */
+/* ========================================= */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--font-kameron);
+  font-size: var(--size-1-2);
+}
+p{
+  line-height: 27px;
+}
+ul,
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #EC0000;
+}
+img{
+  display: block;
+  width: 100%;
+}
+/* ========================================= */
+     /* ESTILOS MARGIN / PADDING / TEXT */
+/* ========================================= */
+.margin{margin: 1em;}
+.margin__top{margin-top: 1em;}
+.margin__left{margin-left: 1em;}
+.margin__right{margin-right: 1em;}
+.margin__bottom{margin-bottom: 1em;}
+
+.padding{padding: 1em;}
+.padding__top{padding-top: 1em;}
+.padding__left{padding-left: 1em;}
+.padding__right{padding-right: 1em;}
+.padding__bottom{padding-bottom: 1em;}
+
+.text__center{text-align: center;}
+.text__left{text-align: left;}
+.text__right{text-align: right;}
+
+
+/* ========================================= */
+        /* ESTILOS DEL CONTENEDOR */
+/* ========================================= */
+
+.content{
+  max-width: 95%;
+  width: 1024px;
+  margin: auto;
+}
+.content__100{
+  width: 100%
+}
+.content__flex{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content__flex__center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__flex__round{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content__flex__column{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+/* ========================================= */
+       /* ESTILOS DE LOS BOTONES */
+/* ========================================= */
+.button{
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: var(--bdradius-0-2);
+}
+.verde{
+  background: #028E08;
+}
+.morado{
+  background: #C600CF;
+}
+
+
+/* ========================================= */
+        /* ESTILOS INPUT/LABEL */
+/* ========================================= */
+.input{
+  width: 100%;
+  outline: none;
+  border: 1px solid #CECECE;
+  padding: 15px;
+}
+.input:focus{
+  border-color: #C600CF;
+}
+.input::placeholder{
+  color: #79797999;
+}
+.label{
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+}
+
+
+/* ========================================= */
+              /* GRID */
+/* ========================================= */
+.grid{display: grid; grid-gap: 1em; margin-bottom: 1.3em;}
+
+
+/* ========================================= */
+        /* AMAÑO GRANDE PARA PC/TV */
+/* ========================================= */
+.col-1{grid-template-columns: repeat(1, 1fr);}
+.col-2{grid-template-columns: repeat(2, 1fr);}
+.col-3{grid-template-columns: repeat(3, 1fr);}
+.col-4{grid-template-columns: repeat(4, 1fr);}
+.col-5{grid-template-columns: repeat(5, 1fr);}
+.col-6{grid-template-columns: repeat(6, 1fr);}
+.col-7{grid-template-columns: repeat(7, 1fr);}
+.col-8{grid-template-columns: repeat(8, 1fr);}
+.col-9{grid-template-columns: repeat(9, 1fr);}
+.col-10{grid-template-columns: repeat(10, 1fr);}
+.col-11{grid-template-columns: repeat(11, 1fr);}
+.col-12{grid-template-columns: repeat(12, 1fr);}
+
+.span-1{grid-column: span 1;}
+.span-2{grid-column: span 2;}
+.span-3{grid-column: span 3;}
+.span-4{grid-column: span 4;}
+.span-5{grid-column: span 5;}
+.span-6{grid-column: span 6;}
+.span-7{grid-column: span 7;}
+.span-8{grid-column: span 8;}
+.span-9{grid-column: span 9;}
+.span-10{grid-column: span 10;}
+.span-11{grid-column: span 11;}
+.span-12{grid-column: span 12;}
+
+/* ========================================= */
+      /* TAMAÑO MEDIANO P/TABLET */
+/* ========================================= */
+@media screen and (max-width: 992px) {
+.med-col-1{grid-template-columns: repeat(1, 1fr);}
+.med-col-2{grid-template-columns: repeat(2, 1fr);}
+.med-col-3{grid-template-columns: repeat(3, 1fr);}
+.med-col-4{grid-template-columns: repeat(4, 1fr);}
+.med-col-5{grid-template-columns: repeat(5, 1fr);}
+.med-col-6{grid-template-columns: repeat(6, 1fr);}
+.med-col-7{grid-template-columns: repeat(7, 1fr);}
+.med-col-8{grid-template-columns: repeat(8, 1fr);}
+.med-col-9{grid-template-columns: repeat(9, 1fr);}
+.med-col-10{grid-template-columns: repeat(10, 1fr);}
+.med-col-11{grid-template-columns: repeat(11, 1fr);}
+.med-col-12{grid-template-columns: repeat(12, 1fr);}
+
+.med-span-1{grid-column: span 1;}
+.med-span-2{grid-column: span 2;}
+.med-span-3{grid-column: span 3;}
+.med-span-4{grid-column: span 4;}
+.med-span-5{grid-column: span 5;}
+.med-span-6{grid-column: span 6;}
+.med-span-7{grid-column: span 7;}
+.med-span-8{grid-column: span 8;}
+.med-span-9{grid-column: span 9;}
+.med-span-10{grid-column: span 10;}
+.med-span-11{grid-column: span 11;}
+.med-span-12{grid-column: span 12;}
+}
+
+
+/* ========================================= */
+      /* TAMAÑO CHICOS P/MOVILES */
+/* ========================================= */
+@media screen and (max-width: 576px) {
+.peq-col-1{grid-template-columns: repeat(1, 1fr);}
+.peq-col-2{grid-template-columns: repeat(2, 1fr);}
+.peq-col-3{grid-template-columns: repeat(3, 1fr);}
+.peq-col-4{grid-template-columns: repeat(4, 1fr);}
+.peq-col-5{grid-template-columns: repeat(5, 1fr);}
+.peq-col-6{grid-template-columns: repeat(6, 1fr);}
+.peq-col-7{grid-template-columns: repeat(7, 1fr);}
+.peq-col-8{grid-template-columns: repeat(8, 1fr);}
+.peq-col-9{grid-template-columns: repeat(9, 1fr);}
+.peq-col-10{grid-template-columns: repeat(10, 1fr);}
+.peq-col-11{grid-template-columns: repeat(11, 1fr);}
+.peq-col-12{grid-template-columns: repeat(12, 1fr);}
+
+.peq-span-1{grid-column: span 1;}
+.peq-span-2{grid-column: span 2;}
+.peq-span-3{grid-column: span 3;}
+.peq-span-4{grid-column: span 4;}
+.peq-span-5{grid-column: span 5;}
+.peq-span-6{grid-column: span 6;}
+.peq-span-7{grid-column: span 7;}
+.peq-span-8{grid-column: span 8;}
+.peq-span-9{grid-column: span 9;}
+.peq-span-10{grid-column: span 10;}
+.peq-span-11{grid-column: span 11;}
+.peq-span-12{grid-column: span 12;}
+}
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
+
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
+
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
+
+
+
+/* ========================================= */
+
+/* ========================================= */
+
+
+
+
+
+
