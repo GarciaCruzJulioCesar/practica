@@ -4,6 +4,12 @@
         /* VARIABLES GENERALES */
 /* ========================================= */
 :root{
+  /* COLOR */
+  --color-white: #FFFFFF;
+  /* BACKGROUND */
+  --bg-black: #000000;
+  --bg-white: #FFFFFF;
+  
   /* FUENTES */
   --font-kameron: 'Kameron';
   --font-Baskerville: 'Baskerville';
@@ -107,6 +113,8 @@ a{
 img{
   display: block;
   width: 100%;
+  vertical-align: top;
+  object-fit: cover;
 }
 /* ========================================= */
      /* ESTILOS MARGIN / PADDING / TEXT */

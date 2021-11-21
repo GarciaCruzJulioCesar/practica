@@ -7,6 +7,7 @@ btn.addEventListener('click', function(e) {
 });
 
 window.addEventListener('click', function(e) {
+  e.defaultPrevented();
   if (menu.classList.contains('show') && e.target != menu && e.target != btn) {
     menu.classList.toggle('show');
   }
@@ -63,3 +64,26 @@ function autoplay(){
 }
 autoplay();
 
+const btnswicht = document.querySelector('#swicht');
+
+btnswicht.addEventListener('click', () =>{
+  document.body.classList.toggle('dark');
+  btnswicht.classList.toggle('activeLive');
+  
+  // guardamos el modo en localstorage
+  if(document.body.classList.contains('dark')){
+    localStorage.setItem('dark-mode', "true");
+  }else {
+    localStorage.setItem('dark-mode', 'false');
+  }
+  
+});
+
+// obtenemos el modo actual 
+if(localStorage.getItem('dark-mode') === 'true'){
+  document.body.classList.add('dark');
+  btnswicht.classList.add('activeLive');
+}else{
+  document.body.classList.remove('dark');
+  btnswicht.classList.remove('activeLive');
+}
