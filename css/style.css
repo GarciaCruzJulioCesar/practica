@@ -9,8 +9,8 @@ body.dark{
 /* ======================================== */
 
 .header{
-  background: transparent;
-  margin-top: var(--margin-top);
+  background: #333;
+  /* margin-top: var(--margin-top); */
   padding: 0 5px;
 }
 #toggle{
@@ -205,7 +205,7 @@ body.dark{
 .galeria img{
   display: block;
   width: 100%;
-  height: 350px;
+  height: 170px;
   object-fit: cover;
   transition: transform .5s;
 }
@@ -218,7 +218,7 @@ body.dark{
   transition: .7s ease-in-out all;
 }
 .galeria a:hover img{
-  filter: blur(2px);
+  filter: contrast(50%);
   transform: rotate(10deg) scale(1);
 }
 
